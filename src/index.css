@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif-cormorant: "Cormorant Garamond", serif;
+  --font-serif-playfair: "Playfair Display", serif;
+  --font-sans-manrope: "Manrope", sans-serif;
+  --font-sans-poppins: "Poppins", sans-serif;
+  
+  --color-ivory: #FAF6EE;
+  --color-sand: #E9DCCB;
+  --color-terracotta: #B9684A;
+  --color-gold: #C9A45C;
+  --color-emerald: #176B5B;
+  --color-rose: #D8A39A;
+  --color-cocoa: #493A32;
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+    background-color: var(--color-ivory);
+    color: var(--color-cocoa);
+    font-family: var(--font-sans-manrope);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  /* Selection colors matching the theme */
+  ::selection {
+    background-color: rgba(185, 104, 74, 0.2); /* terracotta with transparency */
+    color: var(--color-cocoa);
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera to completely remove the scroll indicator line */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer utilities {
+  /* Editorial typographic constraints */
+  .editorial-ch-width {
+    max-width: 70ch;
+  }
+
+  /* Shimmer animations for luxury highlights */
+  .shimmer-text {
+    background: linear-gradient(
+      to right,
+      #493A32 20%,
+      #C9A45C 40%,
+      #C9A45C 60%,
+      #493A32 80%
+    );
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 6s linear infinite;
+  }
+
+  .shimmer-gold-text {
+    background: linear-gradient(
+      to right,
+      #C9A45C 20%,
+      #E9DCCB 40%,
+      #E9DCCB 60%,
+      #C9A45C 80%
+    );
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 4s linear infinite;
+  }
+
+  .shimmer-bg {
+    background: linear-gradient(
+      90deg,
+      rgba(250, 246, 238, 0) 0%,
+      rgba(201, 164, 92, 0.15) 50%,
+      rgba(250, 246, 238, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer-anim 3s infinite;
+  }
+}
+
+/* Custom Keyframes */
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes shimmer-anim {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Floating particles for the hero section */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-15px) rotate(180deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+    opacity: 0.2;
+  }
+}
+
+.animate-float-slow {
+  animation: float 12s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Line animation for gold borders and underlines */
+.gold-underline {
+  position: relative;
+}
+.gold-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-gold);
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.gold-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Masonry grid helper */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 24px;
+}
+
+/* Hardware-accelerated GPU animation for high performance filtering */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.boutique-gallery-section, .testimonials-section, .signature-gallery-section {
+  transform: translate3d(0,0,0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform;
+}

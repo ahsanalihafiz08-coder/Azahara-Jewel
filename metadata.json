@@ -1,0 +1,6 @@
+{
+  "name": "Azahara Jewelry",
+  "description": "Azahara Jewelry | Fine Jewelry & Luxury Boutique. Discover exclusive bespoke jewelry, diamond rings, and premium watches in Centro Histórico, CDMX.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
