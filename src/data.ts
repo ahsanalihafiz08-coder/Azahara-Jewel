@@ -52,21 +52,21 @@ export const COLLECTIONS: Collection[] = [
     id: 'pendants-amulets',
     name: 'Pendants & Amulets',
     description: 'Delicately set gems suspended on gold loops, celebrating historical CDMX architectural motifs.',
-    image: 'https://i.ibb.co/9Hf8dsFG/Silver-Ankh-pendant-on-silk-202608161443-3.jpg',
+    image: 'https://i.ibb.co/LdZ1CVHc/Silver-pendant-amulet-with-sapphire-202608202024.jpg',
     count: '10 Handcrafted Gems'
   },
   {
     id: 'bespoke-engagement',
     name: 'Bespoke Engagement',
     description: 'Custom bridal sets and personal solitaire selections crafted in our private historic CDMX lounge.',
-    image: '/assets/images/engagement_ring_1786959179024.jpg',
+    image: 'https://i.ibb.co/DH48NRcY/Diamond-engagement-ring-on-linen-202608202024-1.jpg',
     count: '11 Private Designs'
   },
   {
     id: 'heritage-watches',
     name: 'Heritage Watches',
     description: 'Masterfully crafted luxury timepieces reflecting our dedication to fine precision and mechanics.',
-    image: '/assets/images/luxury_watch_1786959165209.jpg',
+    image: 'https://i.ibb.co/KxFpnZCy/Chronograph-watch-on-fabric-surface-202608202026.jpg',
     count: '6 Collector Pieces'
   }
 ];
@@ -82,7 +82,7 @@ export const FIRST_9_GALLERY: GalleryItem[] = [
   {
     id: 'fg2',
     category: 'Bespoke Engagement',
-    image: '/assets/images/engagement_ring_1786959179024.jpg',
+    image: 'https://i.ibb.co/6316Y6p/Diamond-engagement-ring-on-linen-202608202024.jpg',
     title: 'Bespoke Diamond Engagement Ring',
     sizeSpan: 'col-span-1'
   },
@@ -117,7 +117,7 @@ export const FIRST_9_GALLERY: GalleryItem[] = [
   {
     id: 'fg7',
     category: 'Heritage Watches',
-    image: '/assets/images/luxury_watch_1786959165209.jpg',
+    image: 'https://i.ibb.co/KxFpnZCy/Chronograph-watch-on-fabric-surface-202608202026.jpg',
     title: 'Azahara Heritage Chronograph',
     sizeSpan: 'col-span-1'
   },
@@ -256,13 +256,13 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'p6',
-    name: 'Silver Pendant Necklace',
+    name: 'South Sea Pearl Drop Necklace',
     category: 'Necklaces',
-    description: 'A minimalist sterling silver pendant resting on a clean surface, radiating an understated luxury feel.',
-    image: 'https://i.ibb.co/XxD61cXP/Silver-pendant-necklace-on-surface-202608161453.jpg',
-    specifications: ['925 Sterling Silver', 'Engraved medallion detail', 'Adjustable 50cm chain', 'Perfect everyday piece'],
+    description: 'A majestic South Sea pearl suspended from a delicate champagne gold loop, exuding timeless sophistication.',
+    image: 'https://i.ibb.co/3yzKMfxQ/Pearl-necklace-on-silk-fabric-202608202027.jpg',
+    specifications: ['Genuine South Sea Pearl', '18k Champagne Gold loop', '45cm fine link chain', 'Certificate of Authenticity'],
     isFeatured: false,
-    price: '$155.00'
+    price: '$290.00'
   },
   {
     id: 'p7',
@@ -296,13 +296,13 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'p10',
-    name: 'Pink Cord Elegant Bracelet',
+    name: 'Modern Silver Diamond Bangle',
     category: 'Bracelets',
-    description: 'A delicate friendship-style pink cord bracelet with hand-polished silver charm highlights.',
-    image: 'https://i.ibb.co/rR1Jb5Vg/Pink-cord-bracelet-on-stone-202608161447.jpg',
-    specifications: ['Japanese wax cord', 'Silver clasp accents', 'Fully adjustable circumference', 'Available in multiple colors'],
+    description: 'A sleek sterling silver bangle accented with brilliant-cut micro-set diamonds for everyday elegance.',
+    image: 'https://i.ibb.co/rRZWTVg2/Diamond-bangle-bracelet-on-limes-202608202025.jpg',
+    specifications: ['925 Sterling Silver', 'Micro-pave Diamond Setting', 'Secure hidden clasp', 'Hand-polished finish'],
     isFeatured: false,
-    price: '$120.00'
+    price: '$245.00'
   },
   {
     id: 'p11',
@@ -379,7 +379,7 @@ export const PRODUCTS: Product[] = [
     name: 'Azahara Heritage Chronograph',
     category: 'Heritage Watches',
     description: 'A masterfully crafted chronograph luxury timepiece featuring automatic movement, detailed dial, and warm gold bezel.',
-    image: '/assets/images/luxury_watch_1786959165209.jpg',
+    image: 'https://i.ibb.co/KxFpnZCy/Chronograph-watch-on-fabric-surface-202608202026.jpg',
     specifications: ['Automatic Chronograph Movement', '18k Gold Bezel Accent', 'Hand-finished Leather Strap', 'Scratch-resistant Sapphire Crystal'],
     isFeatured: false,
     price: '$320.00'
@@ -389,7 +389,7 @@ export const PRODUCTS: Product[] = [
     name: 'Edificio Azahara Tourbillon',
     category: 'Heritage Watches',
     description: 'An exceptional luxury mechanical timepiece with an open heart tourbillon dial, reflecting our dedication to CDMX precision.',
-    image: '/assets/images/luxury_watch_1786959165209.jpg',
+    image: 'https://i.ibb.co/KxFpnZCy/Chronograph-watch-on-fabric-surface-202608202026.jpg',
     specifications: ['Skeletal Tourbillon Display', '925 Silver Engraved Flanks', 'Alligator Leather Strap', 'Limited Edition (6 Pieces)'],
     isFeatured: false,
     price: '$330.00'
@@ -446,20 +446,20 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'p25',
-    name: 'Geometric Amethyst Earrings',
+    name: 'Moroccan Filigree Gold Drop Earrings',
     category: 'Earrings',
-    description: 'A beautiful modern geometric framing that suspends the amethyst centerpiece for optimal light refraction.',
-    image: 'https://i.ibb.co/rRWKG9jJ/Silver-geometric-earrings-with-a-202608161447.jpg',
-    specifications: ['925 Sterling Silver', 'Custom geometric frames', 'Hand-set amethysts', 'Length: 1.8cm'],
+    description: 'Exquisitely crafted gold drop earrings with delicate Moroccan filigree lace work, perfect for custom luxury styling.',
+    image: 'https://i.ibb.co/LhbmJyQq/Gold-drop-earrings-displayed-202608202027.jpg',
+    specifications: ['18k Yellow Gold Plating', 'Intricate filigree lacework', 'Ultra-lightweight post', 'Length: 3.2cm'],
     isFeatured: false,
-    price: '$170.00'
+    price: '$210.00'
   },
   {
     id: 'p26',
-    name: 'Bespoke Solitaire Ring',
+    name: 'Bespoke Diamond Engagement Ring',
     category: 'Bespoke Engagement',
     description: 'A custom solitaire diamond engagement ring signifying timeless love and commitment, set in 18k champagne gold.',
-    image: '/assets/images/engagement_ring_1786959179024.jpg',
+    image: 'https://i.ibb.co/6316Y6p/Diamond-engagement-ring-on-linen-202608202024.jpg',
     specifications: ['1.2ct Brilliant-cut Solitaire Diamond', 'VVS1 Clarity Certificate', '18k Champagne Gold Band', 'Bespoke design custom-fit'],
     isFeatured: false,
     price: '$2,450.00'
@@ -469,7 +469,7 @@ export const PRODUCTS: Product[] = [
     name: 'Palma Solitaire Engagement Ring',
     category: 'Bespoke Engagement',
     description: 'Our traditional solitaire setting featuring a brilliant-cut center diamond and micro-pave detailing.',
-    image: '/assets/images/engagement_ring_1786959179024.jpg',
+    image: 'https://i.ibb.co/DH48NRcY/Diamond-engagement-ring-on-linen-202608202024-1.jpg',
     specifications: ['1.5ct Cushion-cut Center Diamond', 'VS2 Clarity GIA Certified', 'Platinum and Gold Micro-pave Band', 'Includes luxury presentation safe'],
     isFeatured: false,
     price: '$3,138.00'
@@ -506,13 +506,13 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'p31',
-    name: 'Sacred Ankh Silver Pendant',
+    name: 'Royal Sapphire Filigree Pendant',
     category: 'Necklaces',
-    description: 'Our detailed sacred design of the silver Ankh pendant, displaying ancient micro-embossings.',
-    image: 'https://i.ibb.co/9Hf8dsFG/Silver-Ankh-pendant-on-silk-202608161443-3.jpg',
-    specifications: ['925 Sterling Silver', 'Micro-embossed front side', 'Includes heavy link chain', 'Bespoke story pamphlet'],
+    description: 'A majestic deep blue sapphire replica gemstone surrounded by delicate hand-polished silver filigree details.',
+    image: 'https://i.ibb.co/XrQd7Jf2/Silver-pendant-with-sapphire-202608202024.jpg',
+    specifications: ['925 Sterling Silver', 'Deep Blue Sapphire Replica Center', 'Hand-crafted filigree framing', 'Includes 50cm silver chain'],
     isFeatured: false,
-    price: '$180.00'
+    price: '$195.00'
   },
   {
     id: 'p32',
